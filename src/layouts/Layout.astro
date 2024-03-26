@@ -4,6 +4,8 @@ interface Props {
 }
 
 const { title } = Astro.props;
+
+import '@/styles/globals.css'
 ---
 
 <!doctype html>
@@ -20,7 +22,7 @@ const { title } = Astro.props;
 		<slot />
 	</body>
 </html>
-<style is:global>
+<!-- <style is:global>
 	:root {
 		--accent: 136, 58, 234;
 		--accent-light: 224, 204, 250;
@@ -33,7 +35,7 @@ const { title } = Astro.props;
 		);
 	}
 	html {
-		font-family: system-ui, sans-serif;
+		font-family: Inter, sans-serif;
 		background: #13151a;
 		background-size: 224px;
 	}
@@ -48,4 +50,4 @@ const { title } = Astro.props;
 			Courier New,
 			monospace;
 	}
-</style>
+</style> -->

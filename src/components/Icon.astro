@@ -1,0 +1,22 @@
+---
+import Stethoscope from "./icons/Stethoscope.astro";
+import Whatsapp from './icons/Whatsapp.astro'
+import Briefcase from './icons/Briefcase.astro'
+import GraduationCap from "./icons/GraduationCap.astro";
+import HeartPulse from "./icons/HeartPulse.astro"
+import { cn } from "@/lib/utils";
+
+const iconMap:any = {
+    stethoscope: Stethoscope,
+    whatsapp: Whatsapp,
+    briefcase: Briefcase,
+    graduationCap: GraduationCap,
+    heartPulse: HeartPulse
+}
+
+const { name, width, height, className } = Astro.props;
+const IconComponent = iconMap[Astro.props.name];
+---
+<span class={cn(`[&>svg]:h-${height} [&>svg]:w-${width}`, className)}>
+    <IconComponent />
+</span>
