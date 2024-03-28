@@ -4,27 +4,27 @@ export const marketingConfig: MarketingConfig = {
   mainNav: [
     {
       title: "Home",
-      href: "#"
+      href: "/#"
     },
     {
       title: "Áreas de atuação",
-      href: "#treatments"
+      href: "/#treatments"
     },
     {
       title: "Sobre mim",
-      href: "#features"
+      href: "/#features"
     },
     {
       title: "Tratamentos",
-      href: "#features"
+      href: "/#features"
     },
     {
       title: "Depoimentos",
-      href: "#features"
+      href: "/#features"
     },
     {
       title: "Contato",
-      href: "#features"
+      href: "/#features"
     },
     {
       title: "Blog",

@@ -1,6 +1,6 @@
 ---
 import Icon from './Icon.astro';
-
+import { Button, buttonVariants } from './ui/button';
 interface Props {
 	title: string;
 	body: string;
@@ -12,11 +12,12 @@ const { href, title, body, icon } = Astro.props;
 ---
 
 <div class="relative overflow-hidden rounded-lg border bg-background p-2">
-	<div class="flex h-[180px] flex-col justify-between rounded-md p-5">
+	<div class="flex h-[11,5rem] flex-col justify-between rounded-md p-5">
 	 <Icon name={icon} className="w-10 h-10 md:w-12 md:h-12"/>
 	  <div class="space-y-2">
 		<h3 class="font-bold">{title}</h3>
-		<p class="text-sm text-muted-foreground">{body}</p>
+		<p class="text-sm text-muted-foreground line-clamp-3">{body}</p>
+		<a href={`detalhes/${href}`} class={`cursor-pointer ${buttonVariants({ variant: "link" })}`}>Saiba mais</a>
 	  </div>
 	</div>
   </div>

@@ -14,7 +14,7 @@ interface Props {
 const {
   title,
   description = siteConfig.description,
-  image = "/og.jpg",
+  image = "/og.jpg", //TODO: CORRIGIR!
 } = Astro.props;
 ---
 
@@ -37,8 +37,8 @@ const {
 <!-- <link rel="canonical" href={canonicalURL} /> -->
 
 <!-- Primary Meta Tags -->
-<title>{title ? `${title} | Astronomy` : "Astronomy"}</title>
-<meta name="title" content={title ? `${title} | Astronomy` : "Astronomy"} />
+<title>{title ? `${title} - Dr. Filipe Vidica` : "Dr. Filipe Vidica"}</title>
+<meta name="title" content={title ? `${title}` : "Dr. Filipe Vidica"} />
 <meta name="description" content={description} />
 
 <!-- Open Graph / Facebook -->

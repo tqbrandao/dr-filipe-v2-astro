@@ -9,7 +9,7 @@ interface Props extends HTMLAttributes<"div"> {
 const { className, ...attrs } = Astro.props;
 ---
 
-<div class={cn("mx-auto flex max-w-[64rem] flex-col items-center justify-center gap-6 text-center", className)} {...attrs}>
+<div class={cn("mx-auto flex max-w-[64rem] flex-col items-center justify-center gap-12 text-center", className)} {...attrs}>
   <slot>
 </div>
   

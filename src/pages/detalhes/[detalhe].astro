@@ -1,0 +1,19 @@
+---
+import MainLayout from '@/layouts/main-layout.astro';
+import treatmentsData from "../../../public/data/treatments.json"
+import { isTemplateExpression } from 'typescript';
+
+export function getStaticPaths() {  
+  return treatmentsData.map(treatment => ({
+    params: {detalhe: treatment.href},
+    props: {title: treatment.title, body: treatment.body}
+  }))
+}
+
+const { detalhe } = Astro.params;
+const {title, body} = Astro.props;
+---
+<MainLayout title={title}>
+  <div>Olá, {detalhe}!</div>
+  <p>{body}</p>
+</MainLayout>
