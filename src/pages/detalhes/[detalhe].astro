@@ -2,6 +2,8 @@
 import MainLayout from '@/layouts/main-layout.astro';
 import treatmentsData from "../../../public/data/treatments.json"
 import { isTemplateExpression } from 'typescript';
+import { Image } from 'astro:assets';
+import image1 from "../../assets/images/photo-1527137342181-19aab11a8ee8.avif"
 
 export function getStaticPaths() {  
   return treatmentsData.map(treatment => ({
@@ -10,10 +12,24 @@ export function getStaticPaths() {
   }))
 }
 
+// TODO: Adicionar container
+// Ver sobre tamanhos das imagens
+// Adicionar import dinamico de imagens
+
 const { detalhe } = Astro.params;
 const {title, body} = Astro.props;
 ---
 <MainLayout title={title}>
-  <div>Olá, {detalhe}!</div>
-  <p>{body}</p>
+  <div class="pt-16 flex items-center justify-center mb-12">
+    <Image src={image1} alt="Imagem de teste" width="600"/>
+  </div>
+
+  <div class="w-[1000px] m-auto flex flex-col gap-4">
+    <h1 class="text-2xl font-semibold text-primary mb-8">{title}</h1>
+    <p>{body}</p>
+    <p>{body}</p>
+    <p>{body}</p>
+    <p>{body}</p>
+  </div>
+  
 </MainLayout>
