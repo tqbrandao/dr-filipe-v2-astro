@@ -9,6 +9,8 @@ import SectionHeader from "@/components/layout/section-header.astro";
 import SectionContainer from "@/components/layout/section-container.astro";
 import treatmentsData from "../../public/data/treatments.json"
 import Card from "@/components/Card.astro";
+import TestimonialsCarousel from "@/components/TestimonialsCarousel";
+
 ---
 
 
@@ -108,6 +110,22 @@ import Card from "@/components/Card.astro";
 					>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sint a ex porro impedit doloremque magni praesentium ut tenetur in culpa ad, rerum voluptas quod labore quis numquam laudantium ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis porro cumque alias et harum maiores consequatur. Sunt, quis, molestias optio quod, dolorum eum soluta laboriosam voluptas fugiat nostrum enim rem. <br />			
 					</p>
+				</SectionContainer>
+				<!-- </div>	 -->
+			</section>	
+
+			<section id="testimonials" class="pt-16 md:pt-24">
+				<!-- <div
+					class="mx-auto flex max-w-[64rem] flex-col items-center justify-center gap-6 text-center"
+				>			 -->
+				<SectionContainer className="gap-0">
+					<SectionHeader title="Depoimentos" icon="users"/>
+						<p
+						class="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7 mt-8"
+						>
+						O que meus pacientes dizem sobre meu trabalho:			
+						</p>
+						<TestimonialsCarousel client:load/>
 				</SectionContainer>
 				<!-- </div>	 -->
 			</section>	
