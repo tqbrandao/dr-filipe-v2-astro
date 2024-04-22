@@ -1,92 +1,100 @@
 ---
 import { siteConfig } from "@/config/site";
-import { buttonVariants} from '@/components/ui/button'
-import { cn } from '@/lib/utils';
-import MainLayout from '@/layouts/main-layout.astro';
-import { Stethoscope } from 'lucide-react';
+import { buttonVariants } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
+import MainLayout from "@/layouts/main-layout.astro";
+import { Stethoscope } from "lucide-react";
 import Icon from "@/components/Icon.astro";
 import SectionHeader from "@/components/layout/section-header.astro";
 import SectionContainer from "@/components/layout/section-container.astro";
-import treatmentsData from "../../public/data/treatments.json"
+import treatmentsData from "../../public/data/treatments.json";
 import Card from "@/components/Card.astro";
 import TestimonialsCarousel from "@/components/TestimonialsCarousel";
-
 ---
 
+<MainLayout title="">
+  <main class="pt-16">
+    <section id="hero">
+      <div
+        class="container flex max-w-[64rem] flex-col items-center text-center space-y-8"
+      >
+        <h1
+          class="font-heading text-5xl font-bold sm:text-5xl md:text-6xl lg:text-7xl !leading-[1.1] text-balance"
+        >
+          Dr. Filipe Vidica
+          <span class="text-primary">Médico Psiquiatra</span>
+        </h1>
 
-	<MainLayout title=''>
-		<main class="pt-16">
+        <p
+          class="max-w-[42rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8 text-balance"
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ullam,
+          ex voluptates, nostrum inventore alias laborum quidem dolore expedita
+          tenetur rem accusamus aliquam quod numquam vitae cumque doloribus
+          nemo. Quam?
+        </p>
 
-			<section id="hero">				
-				<div
-				  class="container flex max-w-[64rem] flex-col items-center text-center space-y-8 "
-				>		 
-				  <h1
-					class="font-heading text-5xl font-bold sm:text-5xl md:text-6xl lg:text-7xl !leading-[1.1] text-balance"
-				  >
-					Dr. Filipe Vidica
-					<span class="text-primary">Médico Psiquiatra</span>
-					
-				  </h1>				  
-			
-				  <p
-					class="max-w-[42rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8 text-balance"
-				  >
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ullam, ex voluptates, nostrum inventore alias laborum quidem dolore expedita tenetur rem accusamus aliquam quod numquam vitae cumque doloribus nemo. Quam?
-				  </p>
-			
-				  <div class="flex justify-center space-x-2 md:space-x-4">
-					<a
-					  href="#"
-					  class={cn(buttonVariants({ size: "lg" }))}
-					>				
-					  <Icon name="whatsapp" width="7" height="7" className="mr-2"/>
-					  Agendar consulta
-					</a>
-					<a
-					  href={siteConfig.links.github}
-					  target="_blank"
-					  rel="noreferrer"
-					  class={cn(buttonVariants({ variant: "outline", size: "lg" }), "px-4")}
-					>					  
-					<span class="[&>svg]:h-7 [&>svg]:w-7 mr-2">
-						<svg
-						  xmlns="http://www.w3.org/2000/svg"
-						  fill="currentColor"
-						  viewBox="0 0 448 512">						 
-						  <path
-							d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
-						</svg>
-					  </span>
-					  Instagram
-					</a>
-				  </div>
-				</div>	
-			</section>
-			
-			<section id="treatments" class="pt-16 md:pt-24">
-				<!-- <div
+        <div class="flex justify-center space-x-2 md:space-x-4">
+          <a href="#" class={cn(buttonVariants({ size: "lg" }))}>
+            <Icon name="whatsapp" width="7" height="7" className="mr-2" />
+            Agendar consulta
+          </a>
+          <a
+            href={siteConfig.links.github}
+            target="_blank"
+            rel="noreferrer"
+            class={cn(
+              buttonVariants({ variant: "outline", size: "lg" }),
+              "px-4"
+            )}
+          >
+            <span class="[&>svg]:h-7 [&>svg]:w-7 mr-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                ></path>
+              </svg>
+            </span>
+            Instagram
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="treatments" class="pt-16 md:pt-24">
+      <!-- <div
 					class="mx-auto flex max-w-[64rem] flex-col items-center justify-center gap-6 text-center"
 				>			 -->
-				<SectionContainer>
-					<SectionHeader title="Tratamentos" icon="heartPulse"/>
-					<!-- <p
+      <SectionContainer>
+        <SectionHeader title="Tratamentos" icon="heartPulse" />
+        <!-- <p
 					class="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7"
 					>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sint a ex porro impedit doloremque magni praesentium ut tenetur in culpa ad, rerum voluptas quod labore quis numquam laudantium ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis porro cumque alias et harum maiores consequatur. Sunt, quis, molestias optio quod, dolorum eum soluta laboriosam voluptas fugiat nostrum enim rem. <br />			
 					</p> -->
-					<div class="container mx-auto grid justify-center gap-4 sm:grid-cols-2 md:max-w-[64rem] md:grid-cols-3">					
-						
-						{treatmentsData.map((treatment) => (
-							<Card title={treatment.title} body={treatment.body} href={treatment.href} icon={treatment.icon}></Card>
-						  ))}
-						  						
-					  </div>
-				</SectionContainer>
-				<!-- </div>	 -->
-			</section>	
-			  
-			<!-- <section id="my-work" class="pt-16 md:pt-24">
+        <div
+          class="container mx-auto grid justify-center gap-4 sm:grid-cols-2 md:max-w-[64rem] md:grid-cols-3"
+        >
+          {
+            treatmentsData.map((treatment) => (
+              <Card
+                title={treatment.title}
+                body={treatment.body}
+                href={treatment.href}
+                icon={treatment.icon}
+              />
+            ))
+          }
+        </div>
+      </SectionContainer>
+      <!-- </div>	 -->
+    </section>
+
+    <!-- <section id="my-work" class="pt-16 md:pt-24">
 				<div
 					class="mx-auto flex max-w-[64rem] flex-col items-center justify-center gap-6 text-center"
 				>			
@@ -99,36 +107,46 @@ import TestimonialsCarousel from "@/components/TestimonialsCarousel";
 				</div>	
 			</section>	 -->
 
-			<section id="about" class="pt-16 md:pt-24">
-				<!-- <div
+    <section id="about" class="pt-16 md:pt-24">
+      <!-- <div
 					class="mx-auto flex max-w-[64rem] flex-col items-center justify-center gap-6 text-center"
 				>			 -->
-				<SectionContainer>
-					<SectionHeader title="Sobre mim" icon="graduationCap"/>
-					<p
-					class="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7"
-					>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sint a ex porro impedit doloremque magni praesentium ut tenetur in culpa ad, rerum voluptas quod labore quis numquam laudantium ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis porro cumque alias et harum maiores consequatur. Sunt, quis, molestias optio quod, dolorum eum soluta laboriosam voluptas fugiat nostrum enim rem. <br />			
-					</p>
-				</SectionContainer>
-				<!-- </div>	 -->
-			</section>	
+      <SectionContainer>
+        <SectionHeader title="Sobre mim" icon="graduationCap" />
+        <p
+          class="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7"
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+          sint a ex porro impedit doloremque magni praesentium ut tenetur in
+          culpa ad, rerum voluptas quod labore quis numquam laudantium ratione.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+          porro cumque alias et harum maiores consequatur. Sunt, quis, molestias
+          optio quod, dolorum eum soluta laboriosam voluptas fugiat nostrum enim
+          rem. <br />
+        </p>
 
-			<section id="testimonials" class="pt-16 md:pt-24">
-				<!-- <div
+        <a href="#" class={cn(buttonVariants({ size: "lg" }))}>
+          <Icon name="whatsapp" width="7" height="7" className="mr-2" />
+          Agendar consulta
+        </a>
+      </SectionContainer>
+      <!-- </div>	 -->
+    </section>
+
+    <section id="testimonials" class="pt-16 md:pt-24">
+      <!-- <div
 					class="mx-auto flex max-w-[64rem] flex-col items-center justify-center gap-6 text-center"
 				>			 -->
-				<SectionContainer className="gap-0">
-					<SectionHeader title="Depoimentos" icon="users"/>
-						<p
-						class="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7 mt-8"
-						>
-						O que meus pacientes dizem sobre meu trabalho:			
-						</p>
-						<TestimonialsCarousel client:load/>
-				</SectionContainer>
-				<!-- </div>	 -->
-			</section>	
-						
-		</main>
-	</MainLayout>
+      <SectionContainer className="gap-0">
+        <SectionHeader title="Depoimentos" icon="users" />
+        <p
+          class="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7 mt-8"
+        >
+          O que meus pacientes dizem sobre meu trabalho:
+        </p>
+        <TestimonialsCarousel client:load />
+      </SectionContainer>
+      <!-- </div>	 -->
+    </section>
+  </main>
+</MainLayout>
