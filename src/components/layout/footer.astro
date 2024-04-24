@@ -2,6 +2,10 @@
 // import { siteConfig } from "@/config/site";
 import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
+import { Image } from "astro:assets";
+import logo from "../../assets/logos/dr-filipe-blue.png";
+import Icon from "../Icon.astro";
+import { buttonVariants } from "../ui/button";
 // import { Icon } from "astro-icon/components";
 
 type Props = {
@@ -12,40 +16,44 @@ const { className } = Astro.props;
 ---
 
 <footer class={cn(className, "border-t")}>
-  <div class="flex flex-col items-center justify-center gap-4 pt-10 bg-muted">
-    <!-- <div class="flex flex-col items-center gap-4 px-8 md:flex-row md:gap-2 md:px-0"> -->
+  <div
+    class="flex flex-col items-center justify-center pt-10 gap-10 bg-card-foreground"
+  >
+    <div class="flex flex-col md:flex-row gap-8 md:gap-40 text-center">
+      <div class="flex flex-col">
+        <a href="#">
+          <Image src={logo} alt="Logo Dr. Filipe" width="250" />
+        </a>
+      </div>
 
-      <div class="flex flex-col md:flex-row gap-40">
-        <div class="flex flex-col gap-4">
-          <p>Dr. Filipe Vidica</p>
-          <h3 class="font-bold text-primary">Redes sociais</h3>
-          <p>Teste</p>
-        </div>
-  
-        <div class="flex flex-col gap-4">
-          <h3 class="font-bold text-primary">Contato</h3>
-          <p>Teste</p>
-          <p>Teste</p>
-        </div>
-  
-        <div class="flex flex-col gap-4">
-          <p>Teste</p>
-          <p>Teste</p>
-          <p>Teste</p>
-        </div>
-  
-        <div class="flex flex-col gap-4">
-          <p>Teste</p>
-          <p>Teste</p>
-          <p>Teste</p>
-        </div>
+      <div class="flex flex-col">
+        <h3 class="font-bold text-primary uppercase">Contato</h3>
+        <p class="mt-4 text-white">(62) 9 8181-1265</p>
       </div>
-      
-      <div class="bg-foreground dark:bg-foreground/50 flex w-full justify-center">
-        <p class="text-center text-md leading-loose text-primary-foreground">
-          © 2024 - <strong>Dr. Filipe Vidica</strong> - Todos os direitos reservados              
-        </p>
+
+      <div class="flex flex-col gap-4">
+        <h3 class="font-bold text-primary uppercase">Redes sociais</h3>
+        <!-- <div class="bg-primary">
+          <a href="https://www.instagram.com/" target="_blank" class="mx-auto">
+            <Icon
+              name="instagram"
+              width="7"
+              height="7"
+              className="text-primary hover:brightness-75"
+            />
+          </a>
+        </div> -->
+        <a href="#" class={cn(buttonVariants({ size: "lg" }), "p-0 mx-auto")}>
+          <Icon name="instagram" width="7" height="7" className="m-2" />
+        </a>
       </div>
+    </div>
+
+    <div class="bg-foreground dark:bg-foreground/50 flex w-full justify-center">
+      <p class="text-center text-md leading-loose text-primary-foreground">
+        © 2024 - <strong>Dr. Filipe Vidica</strong> - Todos os direitos reservados
+      </p>
+    </div>
     <!-- </div> -->
   </div>
 </footer>

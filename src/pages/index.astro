@@ -10,6 +10,7 @@ import SectionContainer from "@/components/layout/section-container.astro";
 import treatmentsData from "../../public/data/treatments.json";
 import Card from "@/components/Card.astro";
 import TestimonialsCarousel from "@/components/TestimonialsCarousel";
+import { YouTube } from "astro-embed";
 ---
 
 <MainLayout title="">
@@ -111,19 +112,21 @@ import TestimonialsCarousel from "@/components/TestimonialsCarousel";
       <!-- <div
 					class="mx-auto flex max-w-[64rem] flex-col items-center justify-center gap-6 text-center"
 				>			 -->
-      <SectionContainer>
+      <SectionContainer className="gap-8">
         <SectionHeader title="Sobre mim" icon="graduationCap" />
         <p
           class="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7"
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-          sint a ex porro impedit doloremque magni praesentium ut tenetur in
-          culpa ad, rerum voluptas quod labore quis numquam laudantium ratione.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-          porro cumque alias et harum maiores consequatur. Sunt, quis, molestias
-          optio quod, dolorum eum soluta laboriosam voluptas fugiat nostrum enim
-          rem. <br />
+          Conheça um pouco mais sobre o Dr. Filipe Vidica.
         </p>
+
+        <div class="container">
+          <YouTube
+            id="zhY-iODwlVQ"
+            poster="https://images-assets.nasa.gov/image/0302063/0302063~medium.jpg"
+            params="&modestbranding=1&rel=0&"
+          />
+        </div>
 
         <a href="#" class={cn(buttonVariants({ size: "lg" }))}>
           <Icon name="whatsapp" width="7" height="7" className="mr-2" />
@@ -133,7 +136,7 @@ import TestimonialsCarousel from "@/components/TestimonialsCarousel";
       <!-- </div>	 -->
     </section>
 
-    <section id="testimonials" class="pt-16 md:pt-24">
+    <section id="testimonials" class="pt-16 md:pt-24 pb-16 md:pb-24">
       <!-- <div
 					class="mx-auto flex max-w-[64rem] flex-col items-center justify-center gap-6 text-center"
 				>			 -->
