@@ -3,7 +3,9 @@ import { siteConfig } from "@/config/site";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import MainLayout from "@/layouts/main-layout.astro";
-import { Stethoscope } from "lucide-react";
+import { Image } from "astro:assets";
+import contactImage from "../assets/images/dr-filipe-photo.jpg";
+import doctoraliaLogo from "../assets/logos/doctoralia-logo.png";
 import Icon from "@/components/Icon.astro";
 import SectionHeader from "@/components/layout/section-header.astro";
 import SectionContainer from "@/components/layout/section-container.astro";
@@ -15,7 +17,7 @@ import { YouTube } from "astro-embed";
 
 <MainLayout title="">
   <main class="pt-16">
-    <section id="hero">
+    <section id="hero" class="pb-16 md:pb-20">
       <div
         class="container flex max-w-[64rem] flex-col items-center text-center space-y-8"
       >
@@ -66,17 +68,10 @@ import { YouTube } from "astro-embed";
       </div>
     </section>
 
-    <section id="treatments" class="pt-16 md:pt-24">
-      <!-- <div
-					class="mx-auto flex max-w-[64rem] flex-col items-center justify-center gap-6 text-center"
-				>			 -->
+    <section id="treatments" class="py-16 md:py-20 bg-[#e9effd]">
       <SectionContainer>
         <SectionHeader title="Tratamentos" icon="heartPulse" />
-        <!-- <p
-					class="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7"
-					>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sint a ex porro impedit doloremque magni praesentium ut tenetur in culpa ad, rerum voluptas quod labore quis numquam laudantium ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis porro cumque alias et harum maiores consequatur. Sunt, quis, molestias optio quod, dolorum eum soluta laboriosam voluptas fugiat nostrum enim rem. <br />			
-					</p> -->
+
         <div
           class="container mx-auto grid justify-center gap-4 sm:grid-cols-2 md:max-w-[64rem] md:grid-cols-3"
         >
@@ -92,26 +87,9 @@ import { YouTube } from "astro-embed";
           }
         </div>
       </SectionContainer>
-      <!-- </div>	 -->
     </section>
 
-    <!-- <section id="my-work" class="pt-16 md:pt-24">
-				<div
-					class="mx-auto flex max-w-[64rem] flex-col items-center justify-center gap-6 text-center"
-				>			
-					<SectionHeader title="O que faço" icon="briefcase"/>
-					<p
-					class="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7"
-					>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sint a ex porro impedit doloremque magni praesentium ut tenetur in culpa ad, rerum voluptas quod labore quis numquam laudantium ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis porro cumque alias et harum maiores consequatur. Sunt, quis, molestias optio quod, dolorum eum soluta laboriosam voluptas fugiat nostrum enim rem. <br />			
-					</p>
-				</div>	
-			</section>	 -->
-
-    <section id="about" class="pt-16 md:pt-24">
-      <!-- <div
-					class="mx-auto flex max-w-[64rem] flex-col items-center justify-center gap-6 text-center"
-				>			 -->
+    <section id="about" class="pt-16 md:pt-20">
       <SectionContainer className="gap-8">
         <SectionHeader title="Sobre mim" icon="graduationCap" />
         <p
@@ -127,19 +105,16 @@ import { YouTube } from "astro-embed";
             params="&modestbranding=1&rel=0&"
           />
         </div>
-
-        <a href="#" class={cn(buttonVariants({ size: "lg" }))}>
-          <Icon name="whatsapp" width="7" height="7" className="mr-2" />
-          Agendar consulta
-        </a>
+        <div class="pt-8">
+          <a href="#" class={cn(buttonVariants({ size: "lg" }))}>
+            <Icon name="whatsapp" width="7" height="7" className="mr-2" />
+            Agendar consulta
+          </a>
+        </div>
       </SectionContainer>
-      <!-- </div>	 -->
     </section>
 
-    <section id="testimonials" class="pt-16 md:pt-24 pb-16 md:pb-24">
-      <!-- <div
-					class="mx-auto flex max-w-[64rem] flex-col items-center justify-center gap-6 text-center"
-				>			 -->
+    <section id="testimonials" class="py-16 md:py-20">
       <SectionContainer className="gap-0">
         <SectionHeader title="Depoimentos" icon="users" />
         <p
@@ -149,7 +124,51 @@ import { YouTube } from "astro-embed";
         </p>
         <TestimonialsCarousel client:load />
       </SectionContainer>
-      <!-- </div>	 -->
+    </section>
+
+    <!-- <section
+      id="contact"
+      class="pb-16 md:pb-20 pt-6 md:pt-12 bg-[url('https://www.toptal.com/designers/subtlepatterns/uploads/fabric_1.png')]"
+    > -->
+    <section id="contact" class="pb-16 md:pb-20 pt-6 md:pt-12">
+      <SectionContainer className="gap-0">
+        <SectionHeader title="Atendimentos" icon="users" />
+        <div class="flex flex-row gap-12 pt-12">
+          <Image
+            src={contactImage}
+            alt="Imagem do Dr. Filipe"
+            width="400"
+            class="rounded-xl shadow-xl shadow-primary/20"
+          />
+          <div class="flex flex-col gap-8 items-center">
+            <p
+              class="leading-normal text-muted-foreground sm:text-lg sm:leading-7"
+            >
+              Realizo atendimentos online para todo o brasil. Agende sua
+              consulta diretamente pelo Whatsapp ou pelo Doctoralia:
+            </p>
+
+            <div class="flex flex-col gap-4 w-[60%] mt-12">
+              <a href="#" class={cn(buttonVariants({ size: "lg" }))}>
+                <Icon name="whatsapp" width="7" height="7" className="mr-2" />
+                Agendar via Whatsapp
+              </a>
+              <a
+                href="#"
+                class={cn(buttonVariants({ variant: "outline", size: "lg" }))}
+              >
+                <Image
+                  src={doctoraliaLogo}
+                  alt="Doctoralia Logo"
+                  width="24"
+                  class="mr-2"
+                />
+                Agendar via Doctoralia
+              </a>
+            </div>
+          </div>
+        </div>
+      </SectionContainer>
     </section>
   </main>
 </MainLayout>
