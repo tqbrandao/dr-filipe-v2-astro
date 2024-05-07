@@ -18,7 +18,7 @@ const { href, title, body, icon } = Astro.props;
     <Icon name={icon} className="w-10 h-10 md:w-12 md:h-12 text-primary" />
     <div class="space-y-2">
       <h3 class="font-bold">{title}</h3>
-      <p class="text-sm text-muted-foreground line-clamp-3">{body}</p>
+      <p class="text-md text-muted-foreground line-clamp-3">{body}</p>
       <a
         href={`detalhes/${href}`}
         class={`cursor-pointer ${buttonVariants({ variant: "link" })}`}
