@@ -17,18 +17,10 @@ export const marketingConfig: MarketingConfig = {
     {
       title: "Depoimentos",
       href: "/#testimonials"
-    },
-    // {
-    //   title: "Depoimentos",
-    //   href: "/#features"
-    // },
+    },    
     {
       title: "Contato",
-      href: "/#features"
-    },
-    // {
-    //   title: "Blog",
-    //   href: "/blog"
-    // }
+      href: "/#contact"
+    },    
   ]
 }

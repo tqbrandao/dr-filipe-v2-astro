@@ -6,6 +6,8 @@ import MainLayout from "@/layouts/main-layout.astro";
 import { Image } from "astro:assets";
 import drFilipeOffice from "../assets/images/dr-filipe-office.jpg";
 import drFilipeImage from "../assets/images/dr-filipe-no-bg.png";
+import drFilipeBackground from "../assets/images/office-background-5.png";
+import drFilipeBackgroundMobile from "../assets/images/office-background-mobile.png";
 import doctoraliaLogo from "../assets/logos/doctoralia-logo.png";
 import Icon from "@/components/Icon.astro";
 import SectionHeader from "@/components/layout/section-header.astro";
@@ -17,16 +19,41 @@ import { YouTube } from "astro-embed";
 ---
 
 <MainLayout title="">
-  <main class="pt-16">
-    <section id="hero" class="pb-16 md:pb-20">
+  <main>
+    <section id="hero" class="relative md:h-[80vh] md:pb-20">
+      <!-- <Image
+        src={drFilipeBackground}
+        alt="Escritório Dr. Filipe"
+        class="absolute"
+        height={650}
+      /> -->
+      <!-- <img
+        src={drFilipeBackground.src}
+        class="absolute h-full w-full object-cover"
+      /> -->
+      <Image
+        src={drFilipeBackground}
+        alt="Dr. Filipe em consultório"
+        class="absolute h-full md:w-full object-cover hidden md:inline-block"
+      />
+      <Image
+        src={drFilipeBackgroundMobile}
+        alt="Dr. Filipe em consultório"
+        class="absolute w-full md:hidden"
+      />
       <div
-        class="container flex md:max-w-[76rem] gap-8 flex-col md:flex-row justify-center"
+        class="pt-16 container flex md:max-w-[76rem] h-full gap-24 md:gap-8 flex-col md:flex-row justify-center relative inset-0"
       >
         <div>
-          <Image src={drFilipeImage} alt="Imagem do Dr. Filipe" width={650} />
+          <Image
+            src={drFilipeImage}
+            alt="Imagem do Dr. Filipe"
+            width={650}
+            class="invisible"
+          />
         </div>
         <div
-          class="flex flex-col items-center gap-8 text-center justify-center"
+          class="flex flex-col items-center gap-8 md:pt-8 text-center justify-center"
         >
           <h1
             class="font-heading font-bold text-5xl md:text-6xl lg:text-7xl !leading-[1.1] text-balance"
@@ -36,12 +63,11 @@ import { YouTube } from "astro-embed";
           </h1>
 
           <p
-            class="max-w-[42rem] leading-normal text-muted-foreground text-lg md:text-xl sm:leading-8 text-balance"
+            class="max-w-[42rem] leading-normal text-muted-foreground text-lg sm:leading-8 text-balance"
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-            ullam, ex voluptates, nostrum inventore alias laborum quidem dolore
-            expedita tenetur rem accusamus aliquam quod numquam vitae cumque
-            doloribus nemo. Quam?
+            Médico formado pela Universidade Federal de Ouro Preto (UFOP), com
+            residência em Psiquiatria pelo Hospital das Clínicas da UFG. <br /> Atendimentos
+            online para todo o Brasil. <br /> CREMERJ 5201258435 / RQE 49423
           </p>
 
           <div
@@ -85,7 +111,7 @@ import { YouTube } from "astro-embed";
       </div>
     </section>
 
-    <section id="treatments" class="py-16 md:py-20 bg-[#e9effd]">
+    <section id="treatments" class="py-16 md:py-20">
       <SectionContainer>
         <SectionHeader title="Tratamentos" icon="heartPulse" />
 
@@ -106,7 +132,7 @@ import { YouTube } from "astro-embed";
       </SectionContainer>
     </section>
 
-    <section id="about" class="py-16 md:py-20">
+    <section id="about" class="py-16 md:py-20 bg-[#f4f7fe]">
       <SectionContainer className="gap-8">
         <SectionHeader title="Sobre mim" icon="graduationCap" />
         <p
@@ -123,7 +149,10 @@ import { YouTube } from "astro-embed";
           />
         </div>
         <div class="pt-8">
-          <a href="#" class={cn(buttonVariants({ size: "lg" }))}>
+          <a
+            href="#"
+            class={cn(buttonVariants({ size: "lg", class: "text-md" }))}
+          >
             <Icon name="whatsapp" width="7" height="7" className="mr-2" />
             Agendar consulta
           </a>
@@ -131,7 +160,7 @@ import { YouTube } from "astro-embed";
       </SectionContainer>
     </section>
 
-    <section id="testimonials" class="py-16 md:py-20 bg-[#e9effd]">
+    <section id="testimonials" class="py-16 md:py-20">
       <SectionContainer className="gap-0">
         <SectionHeader title="Depoimentos" icon="users" />
         <p
@@ -147,7 +176,7 @@ import { YouTube } from "astro-embed";
       id="contact"
       class="pb-16 md:pb-20 pt-6 md:pt-12 bg-[url('https://www.toptal.com/designers/subtlepatterns/uploads/fabric_1.png')]"
     > -->
-    <section id="contact" class="py-16 md:py-20">
+    <section id="contact" class="py-16 md:py-20 bg-[#f4f7fe]">
       <SectionContainer className="gap-0">
         <SectionHeader title="Atendimentos" icon="users" />
         <div class="flex flex-col md:flex-row gap-8 md:gap-12 pt-12">
@@ -156,14 +185,14 @@ import { YouTube } from "astro-embed";
               src={drFilipeOffice}
               alt="Imagem do Dr. Filipe"
               width={750}
-              class="md:rounded-xl md:shadow-xl md:shadow-primary/20"
+              class="md:rounded-xl md:shadow-lg md:shadow-primary/50"
             />
           </div>
-          <div class="flex flex-col gap-8 items-center justify-center px-8">
+          <div class="flex flex-col gap-8 items-center px-8">
             <p
               class="leading-normal text-muted-foreground text-lg sm:leading-7"
             >
-              Realizo atendimentos online para todo o brasil. Agende sua
+              Realizo atendimentos online para todo o Brasil. Agende sua
               consulta diretamente pelo Whatsapp ou pelo Doctoralia:
             </p>
 
