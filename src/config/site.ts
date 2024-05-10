@@ -3,8 +3,8 @@ import type { SiteConfig } from "@/types"
 export const siteConfig: SiteConfig = {
   name: "Dr. Filipe Vidica",
   description: "Médico Psiquiatra.",
-  url: "https://astro-nomy.vercel.app",
-  ogImage: "https://astro-nomy.vercel.app/og.jpg",
+  url: "", //TODO
+  ogImage: "https://i.imgur.com/D27WkpM.jpeg",
   links: {
     twitter: "",
     github: "https://github.com/tqbrandao"
