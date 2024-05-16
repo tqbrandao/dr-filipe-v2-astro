@@ -16,6 +16,7 @@ import treatmentsData from "../../public/data/treatments.json";
 import Card from "@/components/Card.astro";
 import TestimonialsCarousel from "@/components/TestimonialsCarousel";
 import { YouTube } from "astro-embed";
+import AccordionComponent from "@/components/AccordionComponent"
 ---
 
 <MainLayout title="">
@@ -124,7 +125,8 @@ import { YouTube } from "astro-embed";
                 title={treatment.title}
                 body={treatment.body}
                 href={treatment.href}
-                icon={treatment.icon}
+                image={treatment.image}
+                types={treatment.types}
               />
             ))
           }
@@ -141,13 +143,15 @@ import { YouTube } from "astro-embed";
           Conheça um pouco mais sobre o Dr. Filipe Vidica.
         </p>
 
-        <div class="container">
+        <AccordionComponent client:load/>
+
+        <!-- <div class="container">
           <YouTube
             id="zhY-iODwlVQ"
             poster="https://images-assets.nasa.gov/image/0302063/0302063~medium.jpg"
             params="&modestbranding=1&rel=0&"
           />
-        </div>
+        </div> -->
         <div class="pt-8">
           <a
             href="#"

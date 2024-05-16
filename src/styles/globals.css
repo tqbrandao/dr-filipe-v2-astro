@@ -4,7 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -18,7 +17,9 @@
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
     --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted-foreground: 216 16% 33%;
+    /* --muted-foreground: 214 16% 28%; */
+    /* --muted-foreground: 215.4 16.3% 46.9%;  ORIGINAL*/
     --accent: 210 40% 96.1%;
     --accent-foreground: 222.2 47.4% 11.2%;
     --destructive: 0 84.2% 60.2%;
@@ -51,8 +52,6 @@
     --ring: 224.3 76.3% 48%;
   }
 }
-
-
 
 /* @layer base {
   :root {
@@ -118,6 +117,6 @@
   }
 }
 
-lite-youtube {  
+lite-youtube {
   margin: 0 auto;
 }

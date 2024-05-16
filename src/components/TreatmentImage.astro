@@ -1,0 +1,38 @@
+---
+import Anxiety from "../assets/images/treatments/anxiety.png"
+import Bipolar from "../assets/images/treatments/bipolar.png"
+import Borderline from "../assets/images/treatments/borderline.png"
+import Burnout from "../assets/images/treatments/burnout.png"
+import Dementia from "../assets/images/treatments/dementia.png"
+import Depression from "../assets/images/treatments/depression.png"
+import FoodDisorder from "../assets/images/treatments/food.png"
+import Hipocondria from "../assets/images/treatments/hipocondria.png"
+import MentalHealth from "../assets/images/treatments/mental-health.png"
+import Psychotic from "../assets/images/treatments/psychotic.png"
+import Schizophrenia from "../assets/images/treatments/schizophrenia.png"
+import Stress from "../assets/images/treatments/stress.png"
+import Tdah from "../assets/images/treatments/tdah.png"
+
+import { Image } from "astro:assets";
+
+const imgMap: any = {
+  anxiety: Anxiety,
+  bipolar: Bipolar,
+  borderline: Borderline,
+  burnout: Burnout,
+  dementia: Dementia,
+  depression: Depression,
+  food: FoodDisorder,
+  hipocondria: Hipocondria,
+  mentalHealth: MentalHealth,
+  psychotic: Psychotic,
+  schizophrenia: Schizophrenia,
+  stress: Stress,
+  tdah: Tdah
+};
+
+const { image } = Astro.props;
+const ImageSrc = imgMap[Astro.props.image];
+---
+
+<Image width={70} src={ImageSrc} alt="Tratamentos do Dr. Filipe">
