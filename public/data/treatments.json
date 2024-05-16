@@ -2,7 +2,7 @@
   {
     "title": "Transtornos de Ansiedade",
     "body": "É um transtorno que afeta milhões de pessoas em todo o mundo. Ela pode se manifestar de diferentes maneiras, mas geralmente inclui sentimentos de tristeza importante, desesperança e desinteresse em atividades. Além disso, pode causar insônia, perda ou ganho de peso e dificuldade de concentração.",
-    "types": ["Transtorno de Ansiedade Generalizada", "Transtorno de Pânico", "Fobia Social", "Fobias específicas"],
+    "types": "Transtorno de ansiedade generalizada, transtorno de pânico, fobia social, fobias específicas.",
     "href": "depressao",
     "image": "anxiety"
   },
@@ -10,6 +10,7 @@
   {
     "title": "Transtornos Depressivos",
     "body": "É um transtorno que afeta milhões de pessoas em todo o mundo. Ela pode se manifestar de diferentes maneiras, mas geralmente inclui sentimentos de tristeza importante, desesperança e desinteresse em atividades. Além disso, pode causar insônia, perda ou ganho de peso e dificuldade de concentração.",
+    "types": "Depressão maior, distimia, depressão recorrente.",
     "href": "sadness",
     "image": "depression"
   },
@@ -17,8 +18,47 @@
   {
     "title": "Transtorno Afetivo Bipolar (TAB)",
     "body": "É um transtorno que afeta milhões de pessoas em todo o mundo. Ela pode se manifestar de diferentes maneiras, mas geralmente inclui sentimentos de tristeza importante, desesperança e desinteresse em atividades. Além disso, pode causar insônia, perda ou ganho de peso e dificuldade de concentração.",
+    "types": "Mania e hipomania, ciclotimia e espectro bipolar, episódio depressivo do TAB.",
     "href": "depressao",
     "image": "bipolar"
+  },
+
+  {
+    "title": "Transtornos de Personalidade Borderline",
+    "body": "É um transtorno que afeta milhões de pessoas em todo o mundo. Ela pode se manifestar de diferentes maneiras, mas geralmente inclui sentimentos de tristeza importante, desesperança e desinteresse em atividades. Além disso, pode causar insônia, perda ou ganho de peso e dificuldade de concentração.",
+    "types": "Esquizotípico, esquizoide, paranoide, histriônico, anancástico, evitativo, dependente.",
+    "href": "depressao",
+    "image": "borderline"
+  },
+
+  {
+    "title": "Transtornos relacionados a traumas e estressores",
+    "body": "É um transtorno que afeta milhões de pessoas em todo o mundo. Ela pode se manifestar de diferentes maneiras, mas geralmente inclui sentimentos de tristeza importante, desesperança e desinteresse em atividades. Além disso, pode causar insônia, perda ou ganho de peso e dificuldade de concentração.",
+    "types": "Transtorno do estresse pós traumático, transtornos do estresse agudo, burnout.",
+    "href": "depressao",
+    "image": "stress"
+  },
+
+  {
+    "title": "Transtornos Psicóticos",
+    "body": "É um transtorno que afeta milhões de pessoas em todo o mundo. Ela pode se manifestar de diferentes maneiras, mas geralmente inclui sentimentos de tristeza importante, desesperança e desinteresse em atividades. Além disso, pode causar insônia, perda ou ganho de peso e dificuldade de concentração.",
+    "types": "Esquizofrenia, transtorno psicótico breve, transtorno delirante persistente.",
+    "href": "depressao",
+    "image": "schizophrenia"
+  },
+
+  {
+    "title": "Transtornos Alimentares",
+    "body": "É um transtorno que afeta milhões de pessoas em todo o mundo. Ela pode se manifestar de diferentes maneiras, mas geralmente inclui sentimentos de tristeza importante, desesperança e desinteresse em atividades. Além disso, pode causar insônia, perda ou ganho de peso e dificuldade de concentração.",
+    "types": "Compulsão alimentar, bulimia, anorexia.",
+    "href": "depressao",
+    "image": "food"
+  },
+  {
+    "title": "Transtorno obsessivo compulsivo (TOC)",
+    "body": "É um transtorno que afeta milhões de pessoas em todo o mundo. Ela pode se manifestar de diferentes maneiras, mas geralmente inclui sentimentos de tristeza importante, desesperança e desinteresse em atividades. Além disso, pode causar insônia, perda ou ganho de peso e dificuldade de concentração.",
+    "href": "depressao",
+    "image": "toc"
   },
 
   {
@@ -29,52 +69,17 @@
   },
 
   {
-    "title": "Transtornos relacionados a traumas e estressores",
-    "body": "É um transtorno que afeta milhões de pessoas em todo o mundo. Ela pode se manifestar de diferentes maneiras, mas geralmente inclui sentimentos de tristeza importante, desesperança e desinteresse em atividades. Além disso, pode causar insônia, perda ou ganho de peso e dificuldade de concentração.",
-    "href": "depressao",
-    "image": "stress"
-  },
-
-  {
-    "title": "Transtorno obsessivo compulsivo (TOC)",
-    "body": "É um transtorno que afeta milhões de pessoas em todo o mundo. Ela pode se manifestar de diferentes maneiras, mas geralmente inclui sentimentos de tristeza importante, desesperança e desinteresse em atividades. Além disso, pode causar insônia, perda ou ganho de peso e dificuldade de concentração.",
-    "href": "depressao",
-    "image": "depression"
-  },
-
-  {
-    "title": "Transtornos Psicóticos",
-    "body": "É um transtorno que afeta milhões de pessoas em todo o mundo. Ela pode se manifestar de diferentes maneiras, mas geralmente inclui sentimentos de tristeza importante, desesperança e desinteresse em atividades. Além disso, pode causar insônia, perda ou ganho de peso e dificuldade de concentração.",
-    "href": "depressao",
-    "image": "psychotic"
-  },
-
-  {
-    "title": "Transtornos Alimentares",
-    "body": "É um transtorno que afeta milhões de pessoas em todo o mundo. Ela pode se manifestar de diferentes maneiras, mas geralmente inclui sentimentos de tristeza importante, desesperança e desinteresse em atividades. Além disso, pode causar insônia, perda ou ganho de peso e dificuldade de concentração.",
-    "href": "depressao",
-    "image": "food"
-  },
-
-  {
-    "title": "Transtornos de Personalidade Borderline",
-    "body": "É um transtorno que afeta milhões de pessoas em todo o mundo. Ela pode se manifestar de diferentes maneiras, mas geralmente inclui sentimentos de tristeza importante, desesperança e desinteresse em atividades. Além disso, pode causar insônia, perda ou ganho de peso e dificuldade de concentração.",
-    "href": "depressao",
-    "image": "borderline"
-  },
-
-  {
     "title": "Transtornos Dissociativos",
     "body": "É um transtorno que afeta milhões de pessoas em todo o mundo. Ela pode se manifestar de diferentes maneiras, mas geralmente inclui sentimentos de tristeza importante, desesperança e desinteresse em atividades. Além disso, pode causar insônia, perda ou ganho de peso e dificuldade de concentração.",
     "href": "depressao",
-    "image": "depression"
+    "image": "dissociative"
   },
 
   {
     "title": "Transtornos dos sintomas somáticos",
     "body": "É um transtorno que afeta milhões de pessoas em todo o mundo. Ela pode se manifestar de diferentes maneiras, mas geralmente inclui sentimentos de tristeza importante, desesperança e desinteresse em atividades. Além disso, pode causar insônia, perda ou ganho de peso e dificuldade de concentração.",
     "href": "depressao",
-    "image": "depression"
+    "image": "somatic"
   },
 
   {
@@ -88,7 +93,7 @@
     "title": "Transtorno conversivo (Transtorno neurológico funcional)",
     "body": "É um transtorno que afeta milhões de pessoas em todo o mundo. Ela pode se manifestar de diferentes maneiras, mas geralmente inclui sentimentos de tristeza importante, desesperança e desinteresse em atividades. Além disso, pode causar insônia, perda ou ganho de peso e dificuldade de concentração.",
     "href": "depressao",
-    "image": "depression"
+    "image": "conversive"
   },
 
   {
