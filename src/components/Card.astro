@@ -14,7 +14,7 @@ const { title, body, href, image, types } = Astro.props;
 ---
 
 <div
-  class="relative overflow-hidden md:min-h-[12rem] rounded-lg border mx-4 md:mx-0 bg-background hover:bg-muted hover:shadow"
+  class="relative overflow-hidden md:min-h-[10rem] rounded-lg border mx-4 md:mx-0 bg-background hover:bg-muted hover:shadow"
 >
   <div class="flex flex-col rounded-md p-5 h-full">
     <div class="mb-4 mx-auto">
@@ -22,7 +22,7 @@ const { title, body, href, image, types } = Astro.props;
     </div>
     <div class="flex flex-col gap-2 ">      
       <h3 class="font-bold text-primary">{title}</h3>
-      <p class="text-muted-foreground text-sm">{types}</p>
+      <!-- <p class="text-muted-foreground text-sm">{types}</p> -->
       <!-- <p class="text-md text-muted-foreground line-clamp-3">{body}</p> -->
       <!-- <ul class="list-disc marker:text-primary list-inside text-start">
         {types?.map((type)=> (
