@@ -1,12 +1,9 @@
 ---
-// import { siteConfig } from "@/config/site";
-import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
 import { Image } from "astro:assets";
 import logo from "../../assets/logos/dr-filipe-footer-2.svg";
 import Icon from "../Icon.astro";
 import { buttonVariants } from "../ui/button";
-// import { Icon } from "astro-icon/components";
 
 type Props = {
   className?: string;
@@ -33,16 +30,7 @@ const { className } = Astro.props;
 
       <div class="flex flex-col gap-4">
         <h3 class="font-bold text-[#2563EB] uppercase">Redes sociais</h3>
-        <!-- <div class="bg-primary">
-          <a href="https://www.instagram.com/" target="_blank" class="mx-auto">
-            <Icon
-              name="instagram"
-              width="7"
-              height="7"
-              className="text-primary hover:brightness-75"
-            />
-          </a>
-        </div> -->
+       
         <a href="https://www.instagram.com/dr.filipevidica/" target="_blank" class={cn(buttonVariants({ size: "lg" }), "p-0 mx-auto")}>
           <Icon name="instagram" width="7" height="7" className="m-2" />
         </a>
@@ -54,6 +42,6 @@ const { className } = Astro.props;
         © 2024 - <strong>Dr. Filipe Vidica</strong> - Todos os direitos reservados
       </p>
     </div>
-    <!-- </div> -->
+    
   </div>
 </footer>

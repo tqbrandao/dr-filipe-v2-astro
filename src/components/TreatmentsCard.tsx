@@ -1,6 +1,6 @@
-import React, { useState } from "react"
+import { useState } from "react"
 import TreatmentImage from "./TreatmentImage.astro"
-import { Button, buttonVariants } from "./ui/button"
+import { buttonVariants } from "./ui/button"
 
 interface Props {
   title: string

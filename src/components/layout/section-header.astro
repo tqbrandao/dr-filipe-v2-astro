@@ -2,12 +2,12 @@
 import Icon from "../Icon.astro";
 import { cn } from "@/lib/utils";
 
-const { title, icon, description, className } = Astro.props;
+const { title, icon, className } = Astro.props;
 ---
 
 <div class={cn("flex items-center gap-6", className)}>
   <Icon name={icon} className="w-10 h-10 md:w-12 md:h-12 text-primary" />
-  <h2 class="font-heading text-5xl leading-[1.1] md:text-6xl">
+  <h2 class="font-heading text-4xl leading-[1.1] md:text-6xl">
     {title}
   </h2>
 </div>

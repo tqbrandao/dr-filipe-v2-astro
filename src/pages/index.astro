@@ -1,5 +1,4 @@
 ---
-import { siteConfig } from "@/config/site";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import MainLayout from "@/layouts/main-layout.astro";
@@ -21,17 +20,7 @@ import AccordionComponent from "@/components/AccordionComponent"
 
 <MainLayout title="">
   <main>
-    <section id="hero" class="relative md:h-[80vh] md:pb-20">
-      <!-- <Image
-        src={drFilipeBackground}
-        alt="Escritório Dr. Filipe"
-        class="absolute"
-        height={650}
-      /> -->
-      <!-- <img
-        src={drFilipeBackground.src}
-        class="absolute h-full w-full object-cover"
-      /> -->
+    <section id="hero" class="relative md:h-[80vh] md:pb-20">     
       <Image
         src={drFilipeBackground}
         alt="Dr. Filipe em consultório"
@@ -178,10 +167,7 @@ import AccordionComponent from "@/components/AccordionComponent"
       </SectionContainer>
     </section>
 
-    <!-- <section
-      id="contact"
-      class="pb-16 md:pb-20 pt-6 md:pt-12 bg-[url('https://www.toptal.com/designers/subtlepatterns/uploads/fabric_1.png')]"
-    > -->
+    
     <section id="contact" class="py-16 md:py-20 bg-[#f2f5f7]">
       <SectionContainer className="gap-0">
         <SectionHeader title="Atendimentos" icon="stethoscope" />
@@ -211,24 +197,7 @@ import AccordionComponent from "@/components/AccordionComponent"
                 <Icon name="whatsapp" width="7" height="7" className="mr-2" />
                 Agendar via Whatsapp
               </a>
-              <!-- <a
-                href="#"
-                class={cn(
-                  buttonVariants({
-                    variant: "outline",
-                    size: "lg",
-                    class: "text-md",
-                  })
-                )}
-              >
-                <Image
-                  src={doctoraliaLogo}
-                  alt="Doctoralia Logo"
-                  width="24"
-                  class="mr-2"
-                />
-                Agendar via Doctoralia
-              </a> -->
+              
             </div>
           </div>
         </div>
