@@ -12,7 +12,7 @@ const segment = extractSegmentURL(Astro.url.pathname);
 
 {
   items?.length ? (
-    <nav class="hidden gap-20 md:flex">
+    <nav class="hidden gap-12 md:flex">
       {items?.map((item) => (
         <a
           href={item.disabled ? "#" : item.href}

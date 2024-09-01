@@ -1,0 +1,105 @@
+[
+  {
+    "title": "Ansiedade e Síndrome do Pânico",
+    "body": "Devemos ter ciência que a ansiedade é uma emoção ou sentimento esperado, que te prepara para o futuro. Contudo, quando disfuncional  vem associada à preocupação excessiva ou até medo para acontecimentos futuros. Quando muito intensa, pode configurar a Síndrome do Pânico, que se apresenta em forma de crise,  associada a sintomas físicos como sensação de falta de ar, palpitação (taquicardia).",
+    "href": "depressao",
+    "image": "anxiety"
+  },
+
+  {
+    "title": "Depressão",
+    "body": "É uma condição em que, em um determinado período, os seguintes sintomas podem estar presentes: sentimentos de tristeza e angústia; diminuição da energia para fazer coisas do dia a dia; sensação de fadiga e cansaço; perda do prazer para atividades que antes gostava; ganho ou perda de peso; insônia ou sono excessivo; dificuldade de concentração; além de pensamentos recorrentes de morte ou ideação suicida.",
+    "href": "sadness",
+    "image": "depression"
+  },
+
+  {
+    "title": "Transtorno Bipolar",
+    "body": "Esse transtorno se caracteriza por períodos de depressão e mania. Na depressão, o indivíduo vai apresentar sentimento de tristeza, perda do prazer, diminuição da energia entre outros. Já na Mania, de forma oposta, a pessoa mantém um estado de euforia, aumento da energia com sensação de grandiosidade.",
+    "href": "depressao",
+    "image": "bipolar"
+  },
+
+  {
+    "title": "TDAH (Transtorno de Déficit de Atenção e Hiperatividade):",
+    "body": "É um transtorno do neurodesenvolvimento, em que o indivíduo apresenta sintomas de desatenção (por exemplo não conseguir se concentrar ao ver um filme ou estudar), hiperatividade (por exemplo tendo inquietude e agitação) e impulsividade (como agir ou falar sem antes de pensar).",
+    "href": "depressao",
+    "image": "borderline"
+  },
+
+  {
+    "title": "Estresse",
+    "body": "É um estado de falta de bem estar psíquico ou psicológico, associado a um sentimento de esgotamento físico e emocional. Com comprometimento do desempenho no trabalho ou nas relações interpessoais.",
+    "href": "depressao",
+    "image": "stress"
+  },
+
+  {
+    "title": "Transtornos Psicóticos",
+    "body": "É um transtorno que afeta milhões de pessoas em todo o mundo. Ela pode se manifestar de diferentes maneiras, mas geralmente inclui sentimentos de tristeza importante, desesperança e desinteresse em atividades. Além disso, pode causar insônia, perda ou ganho de peso e dificuldade de concentração.",
+    "href": "depressao",
+    "image": "schizophrenia"
+  },
+
+  {
+    "title": "Transtornos Alimentares",
+    "body": "É um transtorno que afeta milhões de pessoas em todo o mundo. Ela pode se manifestar de diferentes maneiras, mas geralmente inclui sentimentos de tristeza importante, desesperança e desinteresse em atividades. Além disso, pode causar insônia, perda ou ganho de peso e dificuldade de concentração.",
+    "href": "depressao",
+    "image": "food"
+  },
+  {
+    "title": "Transtorno obsessivo compulsivo (TOC)",
+    "body": "É um transtorno que afeta milhões de pessoas em todo o mundo. Ela pode se manifestar de diferentes maneiras, mas geralmente inclui sentimentos de tristeza importante, desesperança e desinteresse em atividades. Além disso, pode causar insônia, perda ou ganho de peso e dificuldade de concentração.",
+    "href": "depressao",
+    "image": "toc"
+  },
+
+  {
+    "title": "Transtorno do déficit de atenção e hiperatividade (TDAH)",
+    "body": "É um transtorno que afeta milhões de pessoas em todo o mundo. Ela pode se manifestar de diferentes maneiras, mas geralmente inclui sentimentos de tristeza importante, desesperança e desinteresse em atividades. Além disso, pode causar insônia, perda ou ganho de peso e dificuldade de concentração.",
+    "href": "depressao",
+    "image": "tdah"
+  },
+
+  {
+    "title": "Transtornos Dissociativos",
+    "body": "É um transtorno que afeta milhões de pessoas em todo o mundo. Ela pode se manifestar de diferentes maneiras, mas geralmente inclui sentimentos de tristeza importante, desesperança e desinteresse em atividades. Além disso, pode causar insônia, perda ou ganho de peso e dificuldade de concentração.",
+    "href": "depressao",
+    "image": "dissociative"
+  },
+
+  {
+    "title": "Transtornos dos sintomas somáticos",
+    "body": "É um transtorno que afeta milhões de pessoas em todo o mundo. Ela pode se manifestar de diferentes maneiras, mas geralmente inclui sentimentos de tristeza importante, desesperança e desinteresse em atividades. Além disso, pode causar insônia, perda ou ganho de peso e dificuldade de concentração.",
+    "href": "depressao",
+    "image": "somatic"
+  },
+
+  {
+    "title": "Transtorno de ansiedade de doença (Hipocondria)",
+    "body": "É um transtorno que afeta milhões de pessoas em todo o mundo. Ela pode se manifestar de diferentes maneiras, mas geralmente inclui sentimentos de tristeza importante, desesperança e desinteresse em atividades. Além disso, pode causar insônia, perda ou ganho de peso e dificuldade de concentração.",
+    "href": "depressao",
+    "image": "hipocondria"
+  },
+
+  {
+    "title": "Transtorno conversivo (Transtorno neurológico funcional)",
+    "body": "É um transtorno que afeta milhões de pessoas em todo o mundo. Ela pode se manifestar de diferentes maneiras, mas geralmente inclui sentimentos de tristeza importante, desesperança e desinteresse em atividades. Além disso, pode causar insônia, perda ou ganho de peso e dificuldade de concentração.",
+    "href": "depressao",
+    "image": "conversive"
+  },
+
+  {
+    "title": "Demências",
+    "body": "É um transtorno que afeta milhões de pessoas em todo o mundo. Ela pode se manifestar de diferentes maneiras, mas geralmente inclui sentimentos de tristeza importante, desesperança e desinteresse em atividades. Além disso, pode causar insônia, perda ou ganho de peso e dificuldade de concentração.",
+    "href": "depressao",
+    "image": "dementia"
+  },
+
+  {
+    "title": "Avaliação e Atestado de Sanidade Mental",
+    "body": "É um transtorno que afeta milhões de pessoas em todo o mundo. Ela pode se manifestar de diferentes maneiras, mas geralmente inclui sentimentos de tristeza importante, desesperança e desinteresse em atividades. Além disso, pode causar insônia, perda ou ganho de peso e dificuldade de concentração.",
+    "href": "depressao",
+    "image": "mentalHealth"
+  }
+]

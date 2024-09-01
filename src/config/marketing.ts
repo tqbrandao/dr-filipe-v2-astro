@@ -7,20 +7,24 @@ export const marketingConfig: MarketingConfig = {
       href: "/#"
     },
     {
-      title: "Tratamentos",
-      href: "/#treatments"
+      title: "Situações abordadas",
+      href: "/#situacoes-abordadas"
+    },
+    {
+      title: "Minha abordagem",
+      href: "/#minha-abordagem"
     },
     {
       title: "Sobre mim",
-      href: "/#about"
+      href: "/#sobre-mim"
     },
     {
       title: "Depoimentos",
-      href: "/#testimonials"
-    },    
+      href: "/#depoimentos"
+    },
     {
-      title: "Atendimentos",
-      href: "/#contact"
-    },    
+      title: "Dúvidas",
+      href: "/#faq"
+    }
   ]
 }

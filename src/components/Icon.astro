@@ -6,6 +6,9 @@ import Briefcase from "./icons/Briefcase.astro";
 import GraduationCap from "./icons/GraduationCap.astro";
 import HeartPulse from "./icons/HeartPulse.astro";
 import Users from "./icons/Users.astro";
+import Magnifier from "./icons/Magnifier.astro";
+import Question from "./icons/Question.astro"
+import User from "./icons/User.astro"
 
 
 import { cn } from "@/lib/utils";
@@ -17,7 +20,10 @@ const iconMap: any = {
   briefcase: Briefcase,
   graduationCap: GraduationCap,
   heartPulse: HeartPulse,
-  users: Users,  
+  user: User,
+  users: Users,
+  magnifier: Magnifier,
+  question: Question  
 };
 
 const { width, height, className } = Astro.props;

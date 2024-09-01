@@ -7,15 +7,19 @@ import drFilipeOffice from "../assets/images/dr-filipe-office.jpg";
 import drFilipeImage from "../assets/images/dr-filipe-no-bg.png";
 import drFilipeBackground from "../assets/images/office-background-5.png";
 import drFilipeBackgroundMobile from "../assets/images/office-background-mobile.png";
-import doctoraliaLogo from "../assets/logos/doctoralia-logo.png";
+import {experienceData} from "../data/experience"
 import Icon from "@/components/Icon.astro";
 import SectionHeader from "@/components/layout/section-header.astro";
 import SectionContainer from "@/components/layout/section-container.astro";
 import treatmentsData from "../data/treatments.json";
+// import treatmentsDataV2 from "../data/treatments-v2.json";
 import Card from "@/components/Card.astro";
 import TestimonialsCarousel from "@/components/TestimonialsCarousel";
 import { YouTube } from "astro-embed";
-import AccordionComponent from "@/components/AccordionComponent"
+// import AccordionComponent from "@/components/AccordionComponent"
+import AccordionComponentApproach from "@/components/AccordionComponentApproach"
+import AccordionComponentFAQ from "@/components/AccordionComponentFAQ"
+
 ---
 
 <MainLayout title="">
@@ -46,7 +50,7 @@ import AccordionComponent from "@/components/AccordionComponent"
           class="flex flex-col items-center gap-8 md:pt-8 text-center justify-center"
         >
           <h1
-            class="font-heading font-bold text-5xl md:text-6xl lg:text-7xl !leading-[1.1] text-balance"
+            class="font-heading font-bold text-4xl md:text-5xl lg:text-6xl !leading-[1.1] text-balance"
           >
             Dr. Filipe Vidica
             <span class="text-primary">Médico Psiquiatra</span>
@@ -55,10 +59,19 @@ import AccordionComponent from "@/components/AccordionComponent"
           <p
             class="max-w-[42rem] leading-normal text-muted-foreground text-lg sm:leading-8 text-balance"
           >
-            Médico formado pela Universidade Federal de Ouro Preto (UFOP), com
+            <!-- Médico formado pela Universidade Federal de Ouro Preto (UFOP), com
             residência em Psiquiatria pelo Hospital das Clínicas da UFG. <br /> Atendimentos
-            online para todo o Brasil. <br /> CREMERJ 5201258435 / RQE 49423
+            online para todo o Brasil. <br /> CREMERJ 5201258435 / RQE 49423 -->
+            A complexidade da sua experiência humana não pode ser limitada por um transtorno mental. Para o seu tratamento vamos entender a construção do seu sofrimento. <br /> 
           </p>
+          <span class="text-md leading-normal text-muted-foreground sm:leading-8 text-balance">CREMERJ 5201258435 / RQE 49423</span> 
+
+          <!-- <p
+            class="max-w-[30rem] leading-normal text-muted-foreground text-md sm:leading-8 text-balance"
+          >
+          Médico pela Universidade Federal de Ouro Preto (UFOP), psiquiatra pelo Hospital das Clínicas da Universidade Federal de Goiás (UFG).
+          </p> -->
+
 
           <div
             class="flex flex-col md:flex-row gap-6 md:gap-4 justify-center space-x-2 md:space-x-4"
@@ -72,7 +85,7 @@ import AccordionComponent from "@/components/AccordionComponent"
               Agendar consulta
             </a>
             <a
-              href="https://www.instagram.com/dr.filipevidica/"
+              href="https://www.instagram.com/filipevidica/"
               target="_blank"
               rel="noreferrer"
               class={cn(
@@ -102,13 +115,18 @@ import AccordionComponent from "@/components/AccordionComponent"
       </div>
     </section>
 
-    <section id="treatments" class="py-16 md:py-20">
+    <section id="situacoes-abordadas" class="py-16 md:py-20">
       <SectionContainer>
-        <SectionHeader title="Tratamentos" icon="heartPulse" />
+        <SectionHeader title="Situações Abordadas" icon="heartPulse" />
+        <p
+          class="max-w-[85%] leading-normal text-muted-foreground text-lg sm:leading-7"
+        >
+        Mais do que diagnosticar transtornos mentais, a tarefa de um psiquiatra é desenvolver um raciocínio clínico na busca de um encaminhamento terapêutico individualizado.
+        </p>
 
         <div
           class="container mx-auto grid justify-center gap-4 sm:grid-cols-2 md:max-w-[64rem] md:grid-cols-3"
-        >
+        >         
           {
             treatmentsData.map((treatment) => (
               <Card
@@ -120,20 +138,34 @@ import AccordionComponent from "@/components/AccordionComponent"
               />
             ))
           }
+          <!-- {
+            treatmentsData.slice(0,6).map((treatment) => (
+              <Card
+                title={treatment.title}
+                body={treatment.body}
+                href={treatment.href}
+                image={treatment.image}
+                types={treatment.types}
+              />
+            ))
+          } -->
         </div>
       </SectionContainer>
     </section>
 
-    <section id="about" class="py-16 md:py-20 bg-[#f2f5f7]">
+    <section id="minha-abordagem" class="py-16 md:py-20 bg-[#f2f5f7]">
       <SectionContainer className="gap-8">
-        <SectionHeader title="Sobre mim" icon="graduationCap" />
+        <SectionHeader title="Minha abordagem" icon="magnifier" />
         <p
           class="max-w-[85%] leading-normal text-muted-foreground text-lg sm:leading-7"
         >
-          Conheça um pouco mais sobre o Dr. Filipe Vidica.
+        Minha abordagem tem como base 4 pilares fundamentais:  
         </p>
 
-        <AccordionComponent client:load/>
+        <AccordionComponentApproach client:load />
+
+        <!-- <AccordionComponent client:load/> -->
+        
 
         <!-- <div class="container">
           <YouTube
@@ -155,7 +187,61 @@ import AccordionComponent from "@/components/AccordionComponent"
       </SectionContainer>
     </section>
 
-    <section id="testimonials" class="py-16 md:py-20">
+    <section id="sobre-mim" class="py-16 md:py-20 ">
+      <SectionContainer className="gap-8">
+        <SectionHeader title="Sobre mim" icon="user" />
+        <!-- <p
+          class="max-w-[85%] leading-normal text-muted-foreground text-lg sm:leading-7"
+        >
+          Conheça um pouco mais sobre o Dr. Filipe Vidica.
+        </p> -->
+
+        <!-- <AccordionComponent client:load/> -->
+        
+
+        <div class="container">
+          <YouTube
+            id="yc9cIrp7oek"
+            poster=https://i.imgur.com/bjpWXkw.jpeg            
+            params="&modestbranding=1&rel=0&"
+          />
+        </div>
+
+        <div class="flex flex-col items-center justify-center gap-2">
+          <p
+            class="max-w-[85%] leading-normal text-muted-foreground text-md sm:leading-7 mt-2"
+          >
+          Eu sou o Filipe, natural de Goiânia-GO, um eterno curioso e apaixonado pela mente humana e neurociência. Dentro da medicina, minha história começou em 2010. Foi nessa época que cheguei à histórica cidade de Ouro Preto, em Minas Gerais, para em 2016 me formar em medicina na Universidade Federal De Ouro Preto. 
+          </p>
+
+          <p
+            class="max-w-[85%] leading-normal text-muted-foreground text-md sm:leading-7 mt-2"
+          >
+          No ano de 2018, fui aprovado na concorrida Residência Médica (MEC) de Psiquiatria do Hospital das Clínicas da Universidade Federal de Goiás. Foram 3 anos de muito estudo e aprendizado com renomados psiquiatras, em que tive minha formação teórica e prática dessa especialidade da alma (do Grego: psykhé = alma + iatreía = cura). Minha experiência prática se solidificou além da residência, não apenas no consultório, mas também trabalhando em pronto socorro psiquiátrico, CAPS (Centro De atenção Psicossocial), Hospitais psiquiátricos com regime humanizado de internação, além de interconsultas psiquiátricas dadas para outros médicos em hospitais gerais.
+          </p>
+
+          <p
+            class="max-w-[85%] leading-normal text-muted-foreground text-md sm:leading-7 mt-2"
+          >
+          Essa foi um pouco da história da minha formação médica até aqui. Espero contribuir com a sua busca por saúde, diminuição do sofrimento e qualidade de vida. 
+          </p>
+
+        </div>
+          
+        <div class="pt-8">
+          <a
+            href="https://wa.me/5561999128853"
+            target="_blank"
+            class={cn(buttonVariants({ size: "lg", class: "text-md" }))}
+          >
+            <Icon name="whatsapp" width="7" height="7" className="mr-2" />
+            Agendar consulta
+          </a>
+        </div>
+      </SectionContainer>
+    </section>
+
+    <section id="depoimentos" class="py-16 md:py-20 bg-[#f2f5f7]">
       <SectionContainer className="gap-0">
         <SectionHeader title="Depoimentos" icon="users" />
         <p
@@ -167,8 +253,79 @@ import AccordionComponent from "@/components/AccordionComponent"
       </SectionContainer>
     </section>
 
+    <section id="experience" class="py-16 md:py-20 ">
+      <SectionContainer className="gap-0">
+        <SectionHeader title="Formação e Experiência" icon="stethoscope" />
+        <div class="flex flex-col md:flex-row gap-8 md:gap-8 pt-12">
+          <div class="mx-auto">
+            <Image
+              src={drFilipeOffice}
+              alt="Imagem do Dr. Filipe"
+              width={750}
+              class="md:rounded-xl md:shadow-lg md:shadow-primary/50"
+            />
+          </div>
+          <div class="flex flex-col text-start px-8 justify-around">
+            <ul>
+              {experienceData.map(exp => (
+                <li class="list-disc list-outside text-muted-foreground pb-2">{exp}</li>
+              ))}          
+            </ul>           
+          </div>          
+        </div>
+        <div class="flex flex-col gap-4 sm:max-w-[50%] mt-12">
+          <a
+            href="https://wa.me/5561999128853"
+            target="_blank"
+            class={cn(buttonVariants({ size: "lg", class: "text-md" }))}
+          >
+            <Icon name="whatsapp" width="7" height="7" className="mr-2" />
+            Agendar via Whatsapp
+          </a>
+          
+        </div>
+      </SectionContainer>
+    </section>
+
+    <section id="faq" class="py-16 md:py-20 bg-[#f2f5f7]">
+      <SectionContainer className="gap-8">
+        <SectionHeader title="Dúvidas frequentes" icon="question" />        
+
+        <AccordionComponentFAQ client:load />
+
+        <!-- <div class="pt-8">
+          <a
+            href="https://wa.me/5561999128853"
+            target="_blank"
+            class={cn(buttonVariants({ size: "lg", class: "text-md" }))}
+          >
+            <Icon name="whatsapp" width="7" height="7" className="mr-2" />
+            Agendar consulta
+          </a>
+        </div> -->
+      </SectionContainer>
+    </section>
+
+    <div class="flex flex-col py-20 gap-8 items-center px-8">
+      <p
+        class="leading-normal text-center text-muted-foreground text-lg sm:leading-7"
+      >
+        Realizo atendimentos online para todo o Brasil. Agende sua
+        consulta diretamente pelo Whatsapp:
+      </p>     
+      <a
+        href="https://wa.me/5561999128853"
+        target="_blank"
+        class={cn(buttonVariants({ size: "lg", class: "text-md" }))}
+      >
+        <Icon name="whatsapp" width="7" height="7" className="mr-2" />
+        Agendar via Whatsapp
+      </a>     
+    </div>
+
+
     
-    <section id="contact" class="py-16 md:py-20 bg-[#f2f5f7]">
+    <!-- <section id="contact" class="py-16 md:py-20 ">
       <SectionContainer className="gap-0">
         <SectionHeader title="Atendimentos" icon="stethoscope" />
         <div class="flex flex-col md:flex-row gap-8 md:gap-12 pt-12">
@@ -185,7 +342,7 @@ import AccordionComponent from "@/components/AccordionComponent"
               class="leading-normal text-muted-foreground text-lg sm:leading-7"
             >
               Realizo atendimentos online para todo o Brasil. Agende sua
-              consulta diretamente pelo Whatsapp ou pelo Doctoralia:
+              consulta diretamente pelo Whatsapp:
             </p>
 
             <div class="flex flex-col gap-4 sm:max-w-[50%] md:mt-12">
@@ -202,6 +359,6 @@ import AccordionComponent from "@/components/AccordionComponent"
           </div>
         </div>
       </SectionContainer>
-    </section>
+    </section> -->
   </main>
 </MainLayout>
