@@ -1,4 +1,6 @@
 ---
+import GoogleTagBody from "@/components/GoogleTagBody.astro";
+import GoogleTagHead from "@/components/GoogleTagHead.astro";
 import BaseHead from "@/components/layout/base-head.astro";
 import { cn } from "@/lib/utils";
 
@@ -14,9 +16,11 @@ const { title, description, bodyClass } = Astro.props;
 <!doctype html>
 <html lang="en" class="scroll-smooth scroll-pt-4">
   <head>
+    <GoogleTagHead />
     <BaseHead title={title} description={description} />
   </head>
   <body class={cn("flex flex-col min-h-screen", bodyClass)}>
+    <GoogleTagBody />
     <slot />    
   </body>
 </html>
