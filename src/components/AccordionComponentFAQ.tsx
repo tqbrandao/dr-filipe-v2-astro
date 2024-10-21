@@ -12,25 +12,24 @@ export default function AccordionComponentFAQ() {
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-2">
-        <AccordionTrigger>Quando e por que procurar um psiquiatra? </AccordionTrigger>
+        <AccordionTrigger>Quais são as principais alterações psiquiátricas abordadas?</AccordionTrigger>
         <AccordionContent>
           <p className="mb-4">
-            Quando houver um sofrimento emocional que foge ao esperado pelo contexto; mudança no padrão de pensamentos, por exemplo preocupação excessiva ou pensamentos delirantes; padrão de ansiedade aumentado com crises associadas, geralmente
-            associados a sintomas físicos (palpitações,alteração de sono, apetite etc.); variações de humor com comprometimento nas relações; dificuldade recorrente de atenção ou memória; mudanças comportamentais muito significativas.
+              Como aprendi com um grande professor, um psiquiatra não escolhe as alterações que trata. Meu objetivo é ajudar o paciente com seu sofrimento, independentemente da queixa.
           </p>
           <p>
-            A consulta psiquiátrica não só vai ajudar a identificar se há um transtorno mental subjacente, mas a desenvolver habilidades de enfrentamento e mudanças comportamentais. Quando necessário um tratamento medicamentoso será utilizado,
-            ajudando na redução dos sintomas e remissão do quadro disfuncional. Muitas vezes, independentemente da medicação, será indicado uma abordagem psicoterapêutica ou psicanálise.
+              Contudo, diante da prevalência de algumas condições em relação a outras, posso dizer que as mais comuns na minha prática são: Alterações de Ansiedade (incluindo Ansiedade Generalizada, Síndrome do Pânico, Fobia Social), Depressão,
+              Alterações relacionadas ao Estresse (como conflitos emocionais e o Estresse Pós-Traumático); Distúrbios de Humor (como Distúrbio Bipolar) e TDAH (Déficit de Atenção e Hiperatividade).
           </p>
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-3">
-        <AccordionTrigger>Quais os principais transtornos psiquiátricos abordados?</AccordionTrigger>
+        <AccordionTrigger>Quais os principais distúrbios psiquiátricos abordados?</AccordionTrigger>
         <AccordionContent>
           <p className="mb-4">
-            Como aprendi com um grande professor, um psiquiatra não escolhe os transtornos que trata. Meu objetivo é ajudar o paciente com seu sofrimento, independentemente da queixa. Contudo, diante da prevalência de alguns transtornos em relação a
-            outros, posso dizer que os mais comuns na minha prática são: Transtornos de Ansiedade (incluindo Transtornos de ansiedade Generalizada, Síndrome do Pânico, Fobia Social), Depressão, Transtornos vinculadas ao Estresse (Como conflitos
-            emocionais e Transtornos do Estresse Pós-Traumático); Transtornos de Humor (como Transtorno Bipolar) e TDAH (Transtorno do Déficit de Atenção e Hiperatividade).
+            Como aprendi com um grande professor, um psiquiatra não escolhe os distúrbios que trata. Meu objetivo é ajudar o paciente com seu sofrimento, independentemente da queixa. Contudo, diante da prevalência de alguns distúrbios em relação a
+            outros, posso dizer que os mais comuns na minha prática são: Distúrbios de Ansiedade (incluindo Distúrbios de ansiedade Generalizada, Síndrome do Pânico, Fobia Social), Depressão, Distúrbios vinculadas ao Estresse (Como conflitos
+            emocionais e Distúrbios do Estresse Pós-Traumático); Distúrbios de Humor (como Distúrbio Bipolar) e TDAH (Distúrbio do Déficit de Atenção e Hiperatividade).
           </p>
         </AccordionContent>
       </AccordionItem>
