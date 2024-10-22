@@ -23,16 +23,6 @@ export default function AccordionComponentFAQ() {
           </p>
         </AccordionContent>
       </AccordionItem>
-      <AccordionItem value="item-3">
-        <AccordionTrigger>Quais os principais distúrbios psiquiátricos abordados?</AccordionTrigger>
-        <AccordionContent>
-          <p className="mb-4">
-            Como aprendi com um grande professor, um psiquiatra não escolhe os distúrbios que trata. Meu objetivo é ajudar o paciente com seu sofrimento, independentemente da queixa. Contudo, diante da prevalência de alguns distúrbios em relação a
-            outros, posso dizer que os mais comuns na minha prática são: Distúrbios de Ansiedade (incluindo Distúrbios de ansiedade Generalizada, Síndrome do Pânico, Fobia Social), Depressão, Distúrbios vinculadas ao Estresse (Como conflitos
-            emocionais e Distúrbios do Estresse Pós-Traumático); Distúrbios de Humor (como Distúrbio Bipolar) e TDAH (Distúrbio do Déficit de Atenção e Hiperatividade).
-          </p>
-        </AccordionContent>
-      </AccordionItem>
       <AccordionItem value="item-4">
         <AccordionTrigger>Atende crianças e adolescentes? </AccordionTrigger>
         <AccordionContent>
