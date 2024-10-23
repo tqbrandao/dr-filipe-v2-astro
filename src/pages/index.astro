@@ -20,11 +20,17 @@ import { YouTube } from "astro-embed";
 // import AccordionComponent from "@/components/AccordionComponent"
 import AccordionComponentApproach from "@/components/AccordionComponentApproach"
 import AccordionComponentFAQ from "@/components/AccordionComponentFAQ"
+import CookieBanner from '@/components/CookieBanner';
 
 ---
 
+
+
 <MainLayout title="">
   <main>
+
+    <CookieBanner client:load/>
+
     <section id="hero" class="relative md:h-[80vh] md:pb-20">
       <Image
         src={drFilipeBackground}
